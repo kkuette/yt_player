@@ -9,7 +9,6 @@ import keyboard
 from threading import Thread
 from WSP import WinSoundPlayer
 
-
 class yt_player(object):
 
     def __init__(self, url, opts=None, dir=None, auto_del=True):
@@ -89,7 +88,6 @@ if  __name__ == '__main__':
     dir = "C:/Users/music/"
     if not os.path.exists(dir):
         os.mkdir(dir)
-
     try:
         p = yt_player(url, opts=ydl_opts, dir=dir)
         p.start()
